@@ -1,9 +1,10 @@
+import React from "react";
 // import React, { useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
-// import { Login } from './components';
-// import Home from './container/Home';
-import React from "react";
+import  Login  from './components/Login';
+import Home from './container/Home';
+
 const App = () => {
   // const navigate = useNavigate();
 
@@ -14,14 +15,12 @@ const App = () => {
   // }, []);
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      hello world
-    </h1>
-    // <Routes>
-    //   <div > hiii ther</div>
-    //   {/* <Route path="login" element={<Login />} />
-    //   <Route path="/*" element={<Home />} /> */}
-    // </Routes>
+
+    <Routes>
+
+      <Route path="login" element={<Login />} />
+      <Route path="/*" element={<Home />} />
+    </Routes>
   )
 }
 
